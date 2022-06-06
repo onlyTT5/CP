@@ -1,10 +1,9 @@
 #include <stdio.h>
 int main()
 {
-	int x;
-
-	scanf_s("%d", &x);
-	printf("%d", x ^ 0b1000);
+	int x = 6;
+	
+	printf("%d\n", x ^ (1 << 3));
 
 	return 0;
 }
