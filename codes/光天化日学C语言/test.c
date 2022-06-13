@@ -1,9 +1,14 @@
 #include <stdio.h>
 int main()
 {
-	int x = 6;
-	
-	printf("%d\n", x ^ (1 << 3));
+	int a, b;
+
+	while (scanf_s("%d %d", &a, &b) != EOF) {
+		a = a ^ b;
+		b = a ^ b;
+		a = a ^ b;
+		printf("%d %d\n", a, b);
+	}
 
 	return 0;
 }
