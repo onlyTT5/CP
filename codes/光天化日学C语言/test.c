@@ -1,14 +1,8 @@
 #include <stdio.h>
 int main()
 {
-	int a, b;
-
-	while (scanf_s("%d %d", &a, &b) != EOF) {
-		a = a ^ b;
-		b = a ^ b;
-		a = a ^ b;
-		printf("%d %d\n", a, b);
-	}
+	int x = 18;
+	printf("%d\n", ~x + 1);
 
 	return 0;
 }
